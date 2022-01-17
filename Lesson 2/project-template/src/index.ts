@@ -34,7 +34,7 @@ window.addEventListener("DOMContentLoaded", () => {
     getUserData().userAvatar,
     getFavoritesAmount()
   );
-  renderSearchFormBlock("", "");
+  renderSearchFormBlock();
   renderSearchStubBlock();
   searchHandler();
   // renderToast(

@@ -1,6 +1,11 @@
 import { renderBlock } from "./lib.js";
 
-export function renderSearchFormBlock(arrivalDate, departureDate) {
+// Как мы можем присвоить тип Date для arrivalDate и departureDate, если данные берутся из инпута и имеют тип String ?!
+
+export function renderSearchFormBlock(
+  arrivalDate?: string,
+  departureDate?: string
+) {
   const date = new Date();
   const minDate = new Date().toISOString().split("T")[0];
   const maxDate = new Date(date.getFullYear(), date.getMonth() + 2, 0)
