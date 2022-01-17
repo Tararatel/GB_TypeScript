@@ -44,7 +44,7 @@ export function renderSearchFormBlock(arrivalDate, departureDate) {
           </div>
           <div>
             <label for="check-out-date">Дата выезда</label>
-            <input id="check-out-date" type="date" value="${departureDate}" min="${nextDay}" max="${maxDate}" name="checkout" />
+            <input id="check-out-date" type="date" value="${departureDate}" min="${nextDay}" max="${departureDay}" name="checkout" />
           </div>
           <div>
             <label for="max-price">Макс. цена суток</label>

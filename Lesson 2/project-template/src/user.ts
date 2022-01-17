@@ -1,13 +1,13 @@
 import { renderBlock } from "./lib.js";
 
 export function renderUserBlock(
-  userName = "Wade Warren",
-  userAvatar = "/img/avatar.png",
-  favoriteItemsAmount
+  userName: string = "Wade Warren",
+  userAvatar: string = "/img/avatar.png",
+  favoriteItemsAmount: Number
 ) {
   const favoritesCaption =
     favoriteItemsAmount < 1 ? "ничего нет" : favoriteItemsAmount;
-  const hasFavoriteItems = favoriteItemsAmount >= 1 ? true : false;
+  const hasFavoriteItems = favoriteItemsAmount >= 1;
   const name = userName;
   const avatar = userAvatar;
 
